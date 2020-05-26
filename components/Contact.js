@@ -5,7 +5,7 @@ import { TouchableOpacity } from "react-native-gesture-handler";
 class Contact extends Component {
   state = {
     url: "https://www.mppolice.gov.in/en",
-    git: "",
+    git: "https://github.com/Akshit1311/SOS_APP",
   };
 
   gitRepo = () => {
@@ -21,12 +21,12 @@ class Contact extends Component {
       <View style={styles.container}>
         <Text style={styles.headerText}>Contact MP Police</Text>
         <TouchableOpacity onPress={this.mpPolWeb}>
-          <Text>https://www.mppolice.gov.in/en</Text>
+          <Text>{this.state.url}</Text>
         </TouchableOpacity>
 
         <Text style={styles.headerText}>GitHub Project</Text>
         <TouchableOpacity onPress={this.gitRepo}>
-          <Text>https://www.mppolice.gov.in/en</Text>
+          <Text>{this.state.git}</Text>
         </TouchableOpacity>
       </View>
     );
