@@ -1,8 +1,12 @@
 {
   "expo": {
-    "name": "internAPp",
-    "slug": "internAPp",
-    "platforms": ["ios", "android", "web"],
+    "name": "SOS_App",
+    "slug": "sos_app",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,14 +18,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
-    "description": "",
+    "description": "SOS app for MP Police Internship",
     "android": {
       "package": "com.mp_police.internAPp",
       "versionCode": 1
-    }
+    },
+    "githubUrl": "https://github.com/Akshit1311/SOS_APP.git"
   }
 }

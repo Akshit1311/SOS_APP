@@ -6,14 +6,19 @@ class Contact extends Component {
   state = {
     url: "https://www.mppolice.gov.in/en",
     git: "https://github.com/Akshit1311/SOS_APP",
+    expo: "",
+  };
+
+  mpPolWeb = () => {
+    Linking.openURL(this.state.url);
   };
 
   gitRepo = () => {
     Linking.openURL(this.state.git);
   };
 
-  mpPolWeb = () => {
-    Linking.openURL(this.state.url);
+  expoHost = () => {
+    Linking.openURL(this.state.expo);
   };
 
   render() {
@@ -28,6 +33,11 @@ class Contact extends Component {
         <TouchableOpacity onPress={this.gitRepo}>
           <Text>{this.state.git}</Text>
         </TouchableOpacity>
+
+        {/* <Text style={styles.headerText}>Expo Project</Text>
+        <TouchableOpacity onPress={this.expoHost}>
+          <Text>{this.state.expo}</Text>
+        </TouchableOpacity> */}
       </View>
     );
   }
